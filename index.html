@@ -551,11 +551,55 @@
             </ul>
           </div>
         </div>
+
+        <div class="signup">
+          <h3 class="signup-title">Підпишіться на розсилку</h3>
+          <form class="">
+            <label class="signup-form"
+              >E-mail
+              <input type="email" name="mail" />
+            </label>
+            <button class="btn signup-btn" type="submit">
+              Підписатися
+              <svg width="24px" height="24px" class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-      
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <label
+          >Ім'я
+          <input type="text" name="name" autofocus />
+        </label>
+        <label
+          >Телефон
+          <input type="tel" name="tel" />
+        </label>
+        <label
+          >Пошта
+          <input type="email" name="mail" />
+        </label>
+
+        <label
+          >Коментар
+          <textarea name="comment" id="" rows="10"></textarea>
+        </label>
+
+        <label for="contract"
+          >Погоджуюся з розсилкою та приймаю
+          <a class="contract" href="">Умови договору</a>
+        </label>
+        <input type="checkbox" name="contract-policy" id="contract" />
+
+        <button class="btn primary" type="submit">
+          Відправити
+        </button>
+
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="icon-close">
             <use href="./images/icons.svg#icon-close-black"></use>
