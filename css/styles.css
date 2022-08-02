@@ -14,7 +14,7 @@
   --hover-btn-color: #188ce8;
   --transparent-color: rgba(255, 255, 255, 0.6);
   --border-card-color: #afb1b8;
-  --time-function: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------сторінка Студія ------------------*/
@@ -25,10 +25,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--bg-white-color);
+  padding-top: 80px;
 }
 
 header {
   border-bottom: 1px solid #ececec;
+  background-color: var(--bg-white-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 h1,
 h2,
@@ -187,9 +194,10 @@ img {
 /* ----------button------------- */
 
 .btn {
+  display: inline-flex;
   border-radius: 4px;
   border: none;
-
+  padding: 0;
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
@@ -199,9 +207,10 @@ img {
   transition: color var(--time-function), background-color var(--time-function),
     box-shadow var(--time-function);
   min-width: 200px;
-  padding: 10px 32px;
+  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -457,7 +466,9 @@ footer .bottom {
   margin-top: 12px;
   margin-left: 70px;
 }
-.links-title {
+.links-title,
+.signup-title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -476,18 +487,63 @@ footer .bottom {
   background-color: var(--accent-color);
 }
 
+.icon-send {
+  fill: var(--white-text-color);
+  margin-left: 10px;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  margin-left: 93px;
+  margin-top: 12px;
+}
+.signup-btn {
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  margin-left: 12px;
+}
+
+.signup-form {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+}
+.signup-form-item {
+  flex-grow: 1;
+}
+.signup-form input[type='email'] {
+  width: 100%;
+
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
 /* ----------------portfolio button---------------- */
 
 .btn.secondary {
   transition: color var(--time-function), background-color var(--time-function),
     box-shadow var(--time-function);
-  padding: 6px 22px;
+  /* padding: 6px 22px; */
+  padding-left: 22px;
+  padding-right: 22px;
 
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-
+  height: 38px;
+  justify-content: center;
+  align-items: center;
   background-color: var(--accent-background-color);
 }
 
@@ -585,6 +641,7 @@ footer .bottom {
 .examples-cards .link:focus .card-overlay {
   transform: translateY(0);
 }
+
 /* ------------------modal------------ */
 .backdrop {
   position: fixed;
@@ -604,10 +661,12 @@ footer .bottom {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
 }
 
 .modal {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -646,4 +705,64 @@ footer .bottom {
   width: 18px;
   height: 18px;
   fill: var(--black-text-color);
+}
+.texstarea-form {
+  resize: none;
+
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.modal-title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  margin-bottom: 30px;
+  color: var(--title-text-color);
+}
+.contract-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contract-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.main-form {
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  margin-bottom: 28px;
+}
+.form-field input {
+  padding: 0;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+}
+.btn-send {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 200px;
 }

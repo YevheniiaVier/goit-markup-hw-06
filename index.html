@@ -499,7 +499,7 @@
         </div>
 
         <div class="connect">
-          <h3 class="links-title">Приєднуйтесь</h3>
+          <b class="links-title">Приєднуйтесь</b>
           <div class="footer-sn">
             <ul class="list social-networks">
               <li class="sn-list">
@@ -553,9 +553,9 @@
         </div>
 
         <div class="signup">
-          <h3 class="signup-title">Підпишіться на розсилку</h3>
-          <form class="">
-            <label class="signup-form"
+          <b class="signup-title">Підпишіться на розсилку</b>
+          <form class="signup-form">
+            <label class="signup-form-item"
               >E-mail
               <input type="email" name="mail" />
             </label>
@@ -571,32 +571,32 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-        <label
+        <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="main-form">
+        <label class="form-field"
           >Ім'я
-          <input type="text" name="name" autofocus />
+          <input type="text" name="name" autofocus placeholder=" "/>
         </label>
-        <label
+        <label class="form-field"
           >Телефон
-          <input type="tel" name="tel" />
+          <input type="tel" name="tel" placeholder=" "/>
         </label>
-        <label
+        <label class="form-field"
           >Пошта
-          <input type="email" name="mail" />
+          <input type="email" name="mail" placeholder=" "/>
         </label>
-
-        <label
+        <label class="form-field"
           >Коментар
-          <textarea name="comment" id="" rows="10"></textarea>
+          <textarea class="texstarea-form" name="comment" id=""  rows="7" placeholder="Введіть текст"></textarea>
         </label>
 
-        <label for="contract"
+        <label class="contract-text" for="contract"
           >Погоджуюся з розсилкою та приймаю
-          <a class="contract" href="">Умови договору</a>
+          <a class="link contract-link" href="">Умови договору</a>
         </label>
         <input type="checkbox" name="contract-policy" id="contract" />
 
-        <button class="btn primary" type="submit">
+        <button class="btn primary btn-send" type="submit">
           Відправити
         </button>
 
@@ -605,6 +605,7 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
