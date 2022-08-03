@@ -555,9 +555,9 @@
           <b class="signup-title">Підпишіться на розсилку</b>
 
           <form class="signup-form" autocomplete="off">
-
             <div class="signup-field">
-              <input class="form-input-signup"
+              <input
+                class="form-input-signup"
                 type="email"
                 name="mail"
                 id="user-email"
@@ -572,13 +572,50 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-
           </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="mainform">
+          <label class="form-field">
+            <span class="form-label">Ім'я</span>
+            <input class="form-input" type="text" name="name" autofocus placeholder=" " />
+          </label>
+          <label class="form-field">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" type="tel" name="tel" placeholder=" " />
+          </label>
+          <label class="form-field">
+            <span class="form-label">Пошта</span>
+            <input class="form-input" type="email" name="mail" placeholder=" " />
+          </label>
+        </form>
+        <label class="form-textarea"
+          ><span class="form-label">Коментар</span>
+          <textarea
+            class="texstarea-input"
+            name="comment"
+            id=""
+            rows="7"
+            placeholder="Введіть текст"
+          ></textarea>
+        </label>
+
+        <label class="contract-form" for="contract"
+          ><span class="contract-text"
+            >Погоджуюся з розсилкою та приймаю
+            <a class="link contract-link" href="">Умови договору</a></span
+          >
+        </label>
+        <input type="checkbox" name="contract-policy" id="contract" />
+
+        <button class="btn btn-send" type="submit">
+          Відправити
+        </button>
+
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="icon-close">
             <use href="./images/icons.svg#icon-close-black"></use>
