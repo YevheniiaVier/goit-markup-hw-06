@@ -583,33 +583,42 @@
           <label class="form-field">
             <span class="form-label">Ім'я</span>
             <input class="form-input" type="text" name="name" autofocus placeholder=" " />
+            <svg class="icon-form">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
           </label>
           <label class="form-field">
             <span class="form-label">Телефон</span>
             <input class="form-input" type="tel" name="tel" placeholder=" " />
+            <svg class="icon-form">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
           </label>
           <label class="form-field">
             <span class="form-label">Пошта</span>
             <input class="form-input" type="email" name="mail" placeholder=" " />
+            <svg class="icon-form">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
           </label>
 
           <label class="form-textarea"
             ><span class="form-label">Коментар</span>
             <textarea
-              class="texstarea-input"
+              class="textarea-input"
               name="comment"
               id=""
               placeholder="Введіть текст"
             ></textarea>
           </label>
 
-          <label class="contract-form" for="contract"
-            ><span class="contract-text"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="link contract-link" href="">Умови договору</a></span
-            >
+          <label class="contract-text">
+            Погоджуюся з розсилкою та приймаю
+            <a class="link contract-link" href="">Умови договору</a>
+
+            <input class="checkbox visually-hidden" type="checkbox" name="contract-policy" />
+            <span class="icon-check"></span>
           </label>
-          <input type="checkbox" name="contract-policy" id="contract" />
 
           <button class="btn primary" type="submit">Відправити</button>
         </form>
