@@ -842,6 +842,12 @@ footer .bottom {
 .textarea-input:focus-within {
   border: 1px solid var(--accent-color);
 }
+/* .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+} */
 
 .icon-check {
   position: absolute;
