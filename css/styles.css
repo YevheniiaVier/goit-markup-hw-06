@@ -846,7 +846,9 @@ footer .bottom {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: absolute;
 } */
+
 .icon-check {
   position: absolute;
   display: inline-block;
@@ -858,6 +860,7 @@ footer .bottom {
   fill: white;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+  transition: color var(--time-function), background-color var(--time-function);
 }
 
 .checkbox:checked + .icon-check {
