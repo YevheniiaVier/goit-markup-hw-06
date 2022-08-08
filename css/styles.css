@@ -815,8 +815,6 @@ footer .bottom {
 .contract-link {
   color: var(--accent-color);
   text-decoration: underline;
-
-
 }
 
 .form-label {
@@ -865,6 +863,7 @@ footer .bottom {
 
 .checkbox:checked + .icon-check {
   background-image: url(../images/icon-check.svg);
+  background-position: center;
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
