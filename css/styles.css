@@ -482,7 +482,9 @@ footer .bottom {
 .footer-sn .sn-item:focus {
   background-color: var(--accent-color);
 }
-
+.footer-contacts {
+  width: 231px;
+}
 .signup {
   width: 570px;
   margin-left: auto;
@@ -805,6 +807,7 @@ footer .bottom {
 }
 
 .contract-text {
+  align-items: center;
   position: relative;
   display: block;
 
